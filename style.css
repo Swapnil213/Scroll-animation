@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: fit-content;
+    width: 100%;
+}
+
+.stackArea{
+    width: 100%;
+    height: 300vh;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+}
+
+.left{
+    flex-basis: 50%;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.left h1{
+    width: 80%;
+    font-size: 6vw;
+    line-height: 5vw;
+    padding-bottom: 2vw;
+    font-weight: 500;
+}
+
+.left p{
+    width: 80%;
+    font-size: 1.2vw;
+    line-height: 1vw;
+    padding-bottom: 2vw;
+    font-weight: 200;
+}
+
+.left button{
+    width: 30%;
+    padding: 0.5vw 1vw;
+    background:  burlywood;
+    border-radius: 20px;
+    font-size: 1.2vw;
+}
+
+.right{
+    height: 100vh;
+    flex-basis: 50%;
+    position: sticky;
+    top: 0;
+}
+
+.blue{
+    background: #407Aff;
+}
+.red{
+    background: rgb(250, 67, 67);
+}
+.purple{
+    background: rgb(160, 32, 160);
+}
+.pink{
+    background: rgb(206, 107, 123);
+}
+.card{
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vw;
+    position: absolute;
+    left: calc(50% - 175px);
+    top: calc(50% - 175px);
+    transition: 0.5s ease-in-out;
+}
+
+.card .title{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.card .content{
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.away{
+    transform-origin: bottom left;
+}
